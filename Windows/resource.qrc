@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>Icon/delete.ico</file>
+    <file>Icon/save.ico</file>
+    <file>Icon/add.ico</file>
+    <file>Icon/student-grey.ico</file>
+    <file>Icon/search.ico</file>
+    <file>Icon/student-white.ico</file>
+    <file>Icon/randomwhite.ico</file>
+    <file>Icon/home-grey.ico</file>
+    <file>Icon/home-white.ico</file>
+    <file>Icon/close-window.ico</file>
+    <file>Icon/group-grey.ico</file>
+    <file>Icon/group-white.ico</file>
+    <file>Icon/menu.ico</file>
+    <file>Icon/random-grey.ico</file>
+    <file>Icon/reference-grey.ico</file>
+    <file>Icon/reference-white.ico</file>
+    <file>Icon/reference-white.ico</file>
+  </qresource>
+</RCC>
