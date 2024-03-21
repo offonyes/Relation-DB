@@ -8,7 +8,7 @@ def run_app():
     try:
         app = QApplication(sys.argv)
         window = MainWindow()
-        apply_stylesheet(app, theme='dark_lightgreen.xml')
+        apply_stylesheet(app, theme='dark_blue.xml')
         window.show()
         sys.exit(app.exec_())
     except Exception as e:

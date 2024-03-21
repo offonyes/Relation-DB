@@ -5,6 +5,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(814, 559)
+        MainWindow.setWindowIcon(QtGui.QIcon("Icon\\Logo.png"))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
@@ -602,8 +603,8 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_4)
         self.verticalLayout_5.addWidget(self.stackedWidget)
         self.gridLayout.addWidget(self.widget_3, 0, 2, 1, 1)
-        self.change_btn_2.setStyleSheet("background-color: rgb(139, 195, 74)")
-        self.change_btn_1.setStyleSheet("background-color: rgb(139, 195, 74)")
+        self.change_btn_2.setStyleSheet("background-color: rgb(68, 138, 255)")
+        self.change_btn_1.setStyleSheet("background-color: rgb(68, 138, 255)")
         self.choose_4.hide()
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -638,7 +639,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Relation DB"))
         self.home_btn_2.setText(_translate("MainWindow", "Home"))
         self.random_btn_2.setText(_translate("MainWindow", "Random"))
         self.student_btn_2.setText(_translate("MainWindow", "Student"))
