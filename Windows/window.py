@@ -165,6 +165,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def change_page(self, name, index=None):
         self.stackedWidget.setCurrentWidget(name)
+        self.name_input.clear()
+        self.surname_input.clear()
+        self.age_input.clear()
         if index == "students":
             self.st_ad_groupbox.setTitle("Students DB")
             self.load_data_into_table(self.db.load_data(index), self.tableWidget)
