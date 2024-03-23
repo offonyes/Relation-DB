@@ -37,14 +37,14 @@ class Worker(QObject):
     def student_run(self, number):
         for _ in range(number):
             name, surname, age = self.random_data(18, 30)
-            self.db.add_data("students", name, surname, age)
+            self.db.add_data("students", name=name, surname=surname, age=age)
             self.percentage += 1
             self.progress_bar.emit(int((self.percentage / self.all_number) * 100 + 1))
 
     def advisor_run(self, number):
         for _ in range(number):
             name, surname, age = self.random_data(35, 60)
-            self.db.add_data("advisors", name, surname, age)
+            self.db.add_data("advisors", name=name, surname=surname, age=age)
             self.percentage += 1
             self.progress_bar.emit(int((self.percentage / self.all_number) * 100 + 1))
 

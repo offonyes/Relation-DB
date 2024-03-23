@@ -106,7 +106,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def search_info(self, name, surname, age):
         table_name = self.st_ad_groupbox.title().split(" ")[0].lower()
         tablewidget = self.tableWidget
-        self.load_data_into_table(self.db.search(table_name, name, surname, age), tablewidget)
+        self.load_data_into_table(self.db.search(table_name, name=name, surname=surname, age=age), tablewidget)
 
     def add_one_relation(self, student_id, advisor_id):
         existing_relations = set(self.db.get_existing_relations())
@@ -180,7 +180,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def add_one_data(self, name, surname, age):
         table_name = self.st_ad_groupbox.title().split(" ")[0].lower()
         if name and surname and age:
-            self.db.add_data(table_name, name, surname, age)
+            self.db.add_data(table_name, name=name, surname=surname, age=age)
             self.load_data_into_table(self.db.load_data(table_name), self.tableWidget)
         else:
             QMessageBox.warning(self, "Warning", "Please enter all information.")
